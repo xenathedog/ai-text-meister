@@ -1,0 +1,40 @@
+export const affiliates = [
+  {
+    id: 'canva',
+    name: 'Canva',
+    tagline: 'Professionelle Designs in Sekunden',
+    description: 'Erstelle Grafiken, Social-Media-Posts und mehr mit 1000+ Vorlagen.',
+    cta: 'Canva Pro gratis testen',
+    url: 'https://www.canva.com/',
+    commission: 'Bis zu $36 pro neuer Pro-Subskription',
+    category: 'design' as const,
+    gradient: 'from-blue-500 to-purple-600',
+    icon: '🎨',
+  },
+  {
+    id: 'grammarly',
+    name: 'Grammarly',
+    tagline: 'Schreibfehler vergessen',
+    description: 'KI-gestützte Schreibhilfe für Fehlerfreiheit in E-Mails und Texten.',
+    cta: 'Grammarly gratis nutzen',
+    url: 'https://www.grammarly.com/',
+    commission: '$0.20 pro Registrierung + $20 pro Premium-Upgrade',
+    category: 'writing' as const,
+    gradient: 'from-green-500 to-emerald-600',
+    icon: '✍️',
+  },
+  {
+    id: 'notion',
+    name: 'Notion',
+    tagline: 'Alles in einer App',
+    description: 'Notizen, Projekte, Wikis und Datenbanken in einer App.',
+    cta: 'Notion gratis testen',
+    url: 'https://www.notion.so/',
+    commission: 'Variabel je nach Partner-Programm',
+    category: 'productivity' as const,
+    gradient: 'from-gray-700 to-black',
+    icon: '📋',
+  },
+] as const
+
+export type Affiliate = typeof affiliates[number]
